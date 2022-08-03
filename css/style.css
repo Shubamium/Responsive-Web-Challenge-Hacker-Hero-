@@ -14,6 +14,14 @@ i{
     font-size: 40px;
 }
 
+.small-title{
+    font-size: 80%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
 .uppercase{
     text-transform: uppercase;
 }
@@ -123,18 +131,33 @@ i{
         filter:  grayscale(1);
     }
 
-    .feature .left-up{
-        grid-area: left-up;
+        .feature .left-up{
+            grid-area: left-up;
+        }
+        
+        .feature .left-down{
+            grid-area: left-down;
+        }
+        
+        .feature .right-up{
+            grid-area: right-up;
+        }
+        
+        .feature .right-down{
+            grid-area: right-down;
+        }
+
+.quote{
+    background-color: #fe6e63;
+    color: white;
+    text-align: center;
+    padding:15vh 10%;   
+}
+
+    .quote h2{
+        font-size: 2rem;
     }
-    
-    .feature .left-down{
-        grid-area: left-down;
-    }
-    
-    .feature .right-up{
-        grid-area: right-up;
-    }
-    
-    .feature .right-down{
-        grid-area: right-down;
+
+    .quote .quo{
+        margin: 1em 0;
     }
