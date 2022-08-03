@@ -159,5 +159,9 @@ i{
     }
 
     .quote .quo{
-        margin: 1em 0;
+        margin: 1em auto;
+        color: rgb(212, 212, 212);
+        font-style: italic;
+        max-width: 60ch;
+
     }
