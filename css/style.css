@@ -55,12 +55,12 @@ i{
         cursor: pointer;
     }
 
-    .title{
+.title{
 
-        text-align: center;
-        padding: 10em 0;
-        position: relative;
-    }
+    text-align: center;
+    padding: 10em 0;
+    position: relative;
+}
     .title::before{
         content: '';
         background-image: url('../media/Template/title-bg.jpg');
@@ -176,9 +176,11 @@ i{
 
     .card{
         border: 2px solid grey;
+        width: 300px;
         border-radius: 10px;
-        max-width: 300px;
-        height: 400px;
+        max-height: 400px;
+        overflow: hidden;
+
     }
 
         .card img{
@@ -234,3 +236,61 @@ i{
     .copyright{
         font-size: 80%;
     }
+
+@media screen and (max-width:1024px) {
+        .head button{
+            visibility: hidden;
+        }
+        
+        .feature{
+            grid-template-areas: 
+            'left-up'
+            'left-down'
+            'image'
+            'right-up'
+            'right-down'
+            ;
+            grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            text-align: center;
+            gap: 0;
+        }
+        .feature .align-right{
+            text-align: center;
+        }
+
+        .text-part{
+            max-width: 60ch;
+        }
+
+    .article{
+        flex-wrap: wrap;
+        max-height: fit-content;
+    }
+
+    .article .card{
+        width: 50%;
+    }
+
+    .foot .infos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .foot .infos .info:last-child{
+        display: none;
+    }
+    
+    .hide{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:480px) {
+    .text-part{
+        margin: 1em 0;
+    }
+}
