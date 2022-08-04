@@ -177,7 +177,8 @@ i{
     .card{
         border: 2px solid grey;
         border-radius: 10px;
-        max-width: 30%;
+        max-width: 15%;
+        height: 400px;
     }
 
         .card img{
@@ -196,3 +197,40 @@ i{
             font-size: 1.4rem;
         }
         
+
+.foot{
+    color: white;
+    background-color: #00a3c2;
+    text-align: center;
+    padding: 4em;
+    margin-bottom: 3em;
+}
+    .foot h2{
+        font-size: 3rem;
+    }
+    .foot i{
+        color: #d97873;
+        font-size: 1rem;
+        margin: 0 1em;
+    }
+
+    .foot .infos{
+        padding: .4em 0;
+        display: flex;
+        justify-content: center;
+    }
+    .foot .infos .info{
+        margin: 0 1em;
+        display: flex;
+        align-items: center;
+    }
+
+    .foot hr{
+        color:white;
+        opacity: .2;
+        border: 2px solid white;
+        margin: 1.4em 0;
+    }
+    .copyright{
+        font-size: 80%;
+    }
